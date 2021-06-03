@@ -1,0 +1,25 @@
+import sys
+
+def NOD(x, y):
+  if x%y == 0:
+    print("Greatest Common Divisor: "+str(y))
+  
+print("Enter numbers as: a b")
+numb=input("Enter nums:")
+
+
+if x>y:
+    a=x
+    b=y
+else:
+    a=y
+    b=x
+while True:
+    q=a//b
+    r=a%b
+    if r==0:
+        break
+    else:
+        a=b
+        b=r
+print("Greatest Common Divisor: "+str(b))
